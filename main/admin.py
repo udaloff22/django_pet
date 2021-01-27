@@ -21,6 +21,7 @@ class SmartphoneAdmin(admin.ModelAdmin):
     def formfield_for_foreignkey(self, db_field, request, **kwargs):
         if db_field == 'cathegory':
             return ModelChoiceField(db_field, request, **kwargs)
+    
 
 
 
